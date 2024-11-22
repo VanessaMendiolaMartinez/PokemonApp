@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+
+    //Login
+    <string name="txt_login_email">Correo Electrónico</string>
+    <string name="txt_login_password">Contraseña</string>
+    <string name="txt_login_button">Login</string>
+    <string name="txt_login_hint_email">Correo Electrónico</string>
+    <string name="txt_login_hint_password">Contraseña</string>
+    <string name="txt_login_title">Iniciar Sesión</string>
+    <string name="error_email_empty">El correo electrónico no puede estar vacío</string>
+    <string name="error_password_empty">La contraseña no puede estar vacía</string>
+    <string name="error_invalid_email_or_password">Correo electrónico o contraseña inválidos</string>
+    <string name="error_login_failed">Error en el inicio de sesión.</string>
+
+
+    //Profile
+    <string name="txt_profile_title">Mi perfil</string>
+    <string name="txt_profile_change_photo">Actualizar Foto</string>
+    <string name="txt_profile_button_take_photo">Tomar foto</string>
+    <string name="txt_profile_button_selecet_photo">Seleccionar de la galeria</string>
+    <string name="txt_profile_button_selecet_source">Seleccionar fuente del avatar</string>
+
+
+    //SignOn
+    <string name="txt_signon_title">Crear Cuenta</string>
+    <string name="txt_signon_inciar_Sesion">¿Ya tienes cuenta? Iniciar Sesión</string>
+    <string name="txt_signon_email_empty">Correo electrónico campo vacio</string>
+    <string name="txt_signon_password_empty">Contraseña campo vacio</string>
+    <string name="txt_signon_password_characters">La contraseña debe contener más de 6 caracteres</string>
+    <string name="txt_signon_error">Ocurrio un error al completar el registro, por favor intenta de nuevo</string>
+    <string name="error_password_short">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="txt_signon_invalid_email">El correo es incorrecto</string>
+
+    //Toolbar
+    <string name="txt_toolbar_sign_off">Cerrar Sesión</string>
+
+    //PokemonList
+    <string name="txt_pokemon_list">Lista Pokemon</string>
+    <string name="txt_pokemon_sesión_cerrada">Sesión Cerrada</string>
+    <string name="no_pokemon_found">No se encontraron Pokémon.</string>
+    <string name="check_internet_connection">Comprueba tu conexión a internet.</string>
+
+    //Detail
+    <string name="txt_detail_title">Detalles Pokemon</string>
+    <string name="error_no_internet">No hay conexión a Internet.</string>
+    <string name="error_message_invalid">Ocurrió un error. Por favor, inténtalo nuevamente.</string>
+    <string name="txt_pokemon_id">ID: %1$d</string>
+    <string name="txt_pokemon_height">Altura: %1$.2fm</string>
+    <string name="txt_pokemon_weight">Peso: %1$.2fkg</string>
+    <string name="txt_pokemon_abilities">Habilidades: %1$s</string>
+    <string name="error_fetching_pokemon">Error al obtener el Pokémon: %1$s</string>
+
+</resources>

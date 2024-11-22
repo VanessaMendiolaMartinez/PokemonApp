@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pokemon"
+    app:startDestination="@id/splash_fragment">
+
+    <!-- SplashFragment -->
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.example.pokemonapp.ui.splash.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash_screen">
+
+        <!-- Acción para navegar a SignOnFragment y quitar SplashFragment de la pila -->
+        <action
+            android:id="@+id/action_splash_to_signon"
+            app:destination="@id/signon_fragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/splash_fragment" />
+
+        <!-- Acción para navegar a PokemonListFragment y quitar SplashFragment de la pila -->
+        <action
+            android:id="@+id/action_splash_to_list_pokemon"
+            app:destination="@id/pokemon_list_fragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/splash_fragment" />
+    </fragment>
+
+    <!-- SignOnFragment -->
+    <fragment
+        android:id="@+id/signon_fragment"
+        android:name="com.example.pokemonapp.ui.signon.SignOnFragment"
+        android:label="Signon"
+        tools:layout="@layout/fragment_sign_on">
+
+        <action
+            android:id="@+id/action_sign_on_to_login"
+            app:destination="@id/login_fragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/signon_fragment" />
+
+        <action
+            android:id="@+id/action_sign_on_to_pokemon_list"
+            app:destination="@id/pokemon_list_fragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/signon_fragment" />
+    </fragment>
+
+    <!-- LoginFragment -->
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.pokemonapp.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_pokemon_list"
+            app:destination="@id/pokemon_list_fragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/login_fragment" />
+    </fragment>
+
+    <!-- PokemonListFragment -->
+    <fragment
+        android:id="@+id/pokemon_list_fragment"
+        android:name="com.example.pokemonapp.ui.listPokemon.PokemonListFragment"
+        android:label="Listado de Pokemon"
+        tools:layout="@layout/fragment_list_pokemon">
+
+        <action
+            android:id="@+id/action_pokemon_list_to_pokemon_detail"
+            app:destination="@id/pokemon_detail_fragment" />
+        <action
+            android:id="@+id/action_pokemon_list_to_profile"
+            app:destination="@id/profile_fragment" />
+
+        <action
+            android:id="@+id/action_profile_to_sign_on"
+            app:destination="@id/signon_fragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/pokemon_list_fragment" />
+    </fragment>
+
+    <!-- PokemonDetailFragment -->
+    <fragment
+        android:id="@+id/pokemon_detail_fragment"
+        android:name="com.example.pokemonapp.ui.detailsPokemon.PokemonDetailFragment"
+        android:label="Detalle del Pokemon"
+        tools:layout="@layout/fragment_details_pokemon">
+        <argument
+            android:name="pokemonId"
+            app:argType="integer" />
+    </fragment>
+
+    <!-- ProfileFragment -->
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.example.pokemonapp.ui.profile.ProfileFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Márgenes -->
+    <dimen name="margin_small">16dp</dimen>
+    <dimen name="margin_medium">30dp</dimen>
+    <dimen name="margin_large">35dp</dimen>
+    <dimen name="margin_extra_large">50dp</dimen>
+
+    <!-- Tamaños de texto -->
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+
+    <!-- Dimensiones de imágenes -->
+    <dimen name="image_size_small">30dp</dimen>
+    <dimen name="image_size_medium">36dp</dimen>
+    <dimen name="image_size_large">100dp</dimen>
+</resources>
