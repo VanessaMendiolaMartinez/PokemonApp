@@ -85,8 +85,6 @@ Pokemon App es una aplicación Android que permite a los usuarios:
 
 ### 🌐 API Utilizada
 La aplicación consume datos de Pokémon utilizando la PokeAPI.
-URL: https://pokeapi.co/api/v2/pokemon?offset=300&limit=100
-
 
 ### 🔒 Permisos
     La aplicación requiere permisos para:
